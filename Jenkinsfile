@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
-        S3_BUCKET          = 'restarent9989'   // replace with actual bucket
-        CLOUDFRONT_ID      = 'E1C48U643I1R9M'        // replace with your distribution ID
+        S3_BUCKET          = 'webhosting2369'   // replace with actual bucket
+        CLOUDFRONT_ID      = 'E31F4CDZ0T3RS2'        // replace with your distribution ID
     }
 
     stages {
