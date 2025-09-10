@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/your-repo/frontend.git'
+                    url: 'https://github.com/syam-ch/syamo326.git'
             }
         }
 
