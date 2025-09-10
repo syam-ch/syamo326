@@ -29,7 +29,7 @@ pipeline {
 
         stage('Deploy to S3') {
             steps {
-                withAWS(credentials: 'aws-credentials-id', region: "${AWS_DEFAULT_REGION}") {
+                withAWS(credentials: 'bb96ee64-1a03-4d34-af85-dd1b44ecadc5', region: "${AWS_DEFAULT_REGION}") {
                     sh '''
                         aws s3 sync build/ s3://$S3_BUCKET --delete
                     '''
@@ -39,7 +39,7 @@ pipeline {
 
         stage('Invalidate CloudFront Cache') {
             steps {
-                withAWS(credentials: 'aws-credentials-id', region: "${AWS_DEFAULT_REGION}") {
+                withAWS(credentials: 'bb96ee64-1a03-4d34-af85-dd1b44ecadc5', region: "${AWS_DEFAULT_REGION}") {
                     sh '''
                         aws cloudfront create-invalidation \
                         --distribution-id $CLOUDFRONT_ID \
