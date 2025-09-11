@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCESS_KEY_ID     = credentials('AKIA4H6ZCVJNUSU44T3S')   // Jenkins credentials ID
-        AWS_SECRET_ACCESS_KEY = credentials('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')
+        AWS_ACCESS_KEY_ID     = credentials('')   // Jenkins credentials ID
+        AWS_SECRET_ACCESS_KEY = credentials('')
         AWS_DEFAULT_REGION    = 'us-east-1' // change if needed
         S3_BUCKET             = 'restarent9989'       // replace with your bucket
         CLOUDFRONT_ID         = 'E1C48U643I1R9M'
